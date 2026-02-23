@@ -532,6 +532,8 @@ body {
   display: block;
 }
 
+a.pub-card { cursor: pointer; }
+
 .pub-card:hover {
   border-color: rgba(108,142,248,0.4);
   transform: translateY(-3px);

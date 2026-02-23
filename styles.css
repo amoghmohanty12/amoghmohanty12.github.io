@@ -568,6 +568,21 @@ body {
   color: var(--accent);
 }
 
+.pub-thumb-pathology {
+  background: linear-gradient(135deg, #0e1f1a, #0d3d2e);
+  color: #4ecb8d;
+}
+
+.pub-thumb-neuro {
+  background: linear-gradient(135deg, #1a0e2e, #3a1060);
+  color: #c084fc;
+}
+
+.pub-thumb-congress {
+  background: linear-gradient(135deg, #1f1200, #4a2e00);
+  color: #fbbf24;
+}
+
 .pub-body {
   padding: 15px;
 }

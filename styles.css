@@ -527,6 +527,9 @@ body {
   border: 1px solid var(--border);
   transition: all 0.22s;
   cursor: default;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .pub-card:hover {

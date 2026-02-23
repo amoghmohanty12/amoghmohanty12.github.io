@@ -311,16 +311,20 @@ body {
 }
 
 .what-card {
-  background: var(--surface2);
   border-radius: 12px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 7px;
-  border: 1px solid var(--border);
-  transition: all 0.2s;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--surface2), var(--surface2)) padding-box,
+    linear-gradient(135deg, rgba(108,142,248,0.3), rgba(167,139,250,0.3)) border-box;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
+  transition: all 0.22s;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .what-card::before {
@@ -329,12 +333,15 @@ body {
   inset: 0;
   background: linear-gradient(135deg, var(--accent-glow), transparent);
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.22s;
 }
 
 .what-card:hover {
-  border-color: rgba(108,142,248,0.4);
-  box-shadow: 0 4px 20px rgba(108,142,248,0.08);
+  background:
+    linear-gradient(var(--surface2), var(--surface2)) padding-box,
+    linear-gradient(135deg, var(--accent), var(--accent2)) border-box;
+  box-shadow: 0 8px 28px rgba(108,142,248,0.15);
+  transform: translateY(-3px);
 }
 
 .what-card:hover::before { opacity: 1; }
@@ -521,23 +528,26 @@ body {
 }
 
 .pub-card {
-  background: var(--surface2);
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--surface2), var(--surface2)) padding-box,
+    linear-gradient(135deg, rgba(108,142,248,0.25), rgba(167,139,250,0.25)) border-box;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.22);
   transition: all 0.22s;
-  cursor: default;
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-a.pub-card { cursor: pointer; }
-
 .pub-card:hover {
-  border-color: rgba(108,142,248,0.4);
+  background:
+    linear-gradient(var(--surface2), var(--surface2)) padding-box,
+    linear-gradient(135deg, var(--accent), var(--accent2)) border-box;
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(108,142,248,0.1);
+  box-shadow: 0 8px 28px rgba(108,142,248,0.12);
 }
 
 .pub-thumb {
@@ -630,20 +640,27 @@ a.pub-card { cursor: pointer; }
 }
 
 .contact-card {
-  background: var(--surface2);
-  border: 1px solid var(--border);
   border-radius: 13px;
   padding: 22px 18px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 7px;
-  transition: all 0.2s;
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--surface2), var(--surface2)) padding-box,
+    linear-gradient(135deg, rgba(108,142,248,0.25), rgba(167,139,250,0.25)) border-box;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  transition: all 0.22s;
+  cursor: pointer;
 }
 
 .contact-card:hover {
-  border-color: rgba(108,142,248,0.4);
-  box-shadow: 0 4px 20px rgba(108,142,248,0.08);
+  background:
+    linear-gradient(var(--surface2), var(--surface2)) padding-box,
+    linear-gradient(135deg, var(--accent), var(--accent2)) border-box;
+  box-shadow: 0 8px 24px rgba(108,142,248,0.1);
+  transform: translateY(-2px);
 }
 
 .contact-card i {
